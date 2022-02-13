@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
+</head>
+<body>
+    <form class="calculator" name="calc">
+    <table>
+        <tr>
+            <td colspan="4" class="heading">Calculator</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="inputs"><input class="value" id="inputSize" type="textfield" name="txt" readonly=""></td>
+        </tr>
+        <tr>
+            <td class="nums" onclick="document.calc.txt.value=''">AC</td>
+            <td class="nums" onclick="buttonClicked('back')">CE</td>
+            <td class="nums" onclick="document.calc.txt.value+='%'">%</td>
+            <td class="opt" onclick="document.calc.txt.value+='/'">/</td>
+        </tr>
+        <tr>
+            <td class="nums" onclick="document.calc.txt.value+='7'">7</td>
+            <td class="nums" onclick="document.calc.txt.value+='8'">8</td>
+            <td class="nums" onclick="document.calc.txt.value+='9'">9</td>
+            <td class="opt" onclick="document.calc.txt.value+='*'">*</td>
+        </tr>
+        <tr>
+            <td class="nums" onclick="document.calc.txt.value+='4'">4</td>
+            <td class="nums" onclick="document.calc.txt.value+='5'">5</td>
+            <td class="nums" onclick="document.calc.txt.value+='6'">6</td>
+            <td class="opt" onclick="document.calc.txt.value+='-'">-</td>
+        </tr>
+        <tr>
+            <td class="nums" onclick="document.calc.txt.value+='1'">1</td>
+            <td class="nums" onclick="document.calc.txt.value+='2'">2</td>
+            <td class="nums" onclick="document.calc.txt.value+='3'">3</td>
+            <td class="opt" onclick="document.calc.txt.value+='+'">+</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="nums" onclick="document.calc.txt.value+='0'">0</td>
+            <td class="nums" onclick="document.calc.txt.value+='.'">.</td>
+            <td class="opt" onclick="buttonClicked('=')">=</td>
+        </tr>
+    </table>
+    </form>
+    <script src="Calculator.js"></script>
+</body>
+</html>
